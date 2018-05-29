@@ -32,12 +32,21 @@ new Vue({
   template: '<App/>',
   created () {
     fb.initializeApp({
+      // BD from course
       apiKey: 'AIzaSyD5mgcTCPSiTxPfmTmBmPFWZU7GdR9l1BQ',
       authDomain: 'itc-ads.firebaseapp.com',
       databaseURL: 'https://itc-ads.firebaseio.com',
       projectId: 'itc-ads',
       storageBucket: 'itc-ads.appspot.com',
       messagingSenderId: '145551978680'
+
+        // BD MakhmutovVA
+      // apiKey: 'AIzaSyAODf23hILG-x-Ga2uuIoW3ZM4vWPffQEI',
+      // authDomain: 'itc-ad-mib.firebaseapp.com',
+      // databaseURL: 'https://itc-ad-mib.firebaseio.com',
+      // projectId: 'itc-ad-mib',
+      // storageBucket: 'itc-ad-mib.appspot.com',
+      // messagingSenderId: '730580896901'
     })
 
     fb.auth().onAuthStateChanged(user => {
